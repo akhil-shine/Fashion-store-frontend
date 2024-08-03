@@ -1,0 +1,97 @@
+/* Carousel Section Styles */
+.carousel-section-gray {
+    background-color: #f0f0f0; /* Gray background */
+    padding: 50px 0; /* Padding for top and bottom */
+    text-align: center; /* Center images horizontally */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+/* Optional: Add carousel controls */
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+/* Hide controls if not needed */
+.carousel-control-prev, .carousel-control-next {
+    display: none;
+}
+
+
+.hero {
+    background: url('http://localhost:5500/assets/ba1.jpg') no-repeat center center; /* Default image */
+    background-size: cover;
+    padding: 230px 0;
+    text-align: center;
+    color: #8b8383;
+    transition: background-image 1s ease-in-out;
+    display: flex; /* Use flexbox for positioning */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-end; /* Align items to the bottom */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a bottom shadow */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1; /* Ensure text and button are above the background */
+}
+
+.btn.shop-now {
+    position: absolute; /* Position the button absolutely */
+    left: 280px; /* Distance from the left edge */
+    top: 20px; /* Distance from the top edge */
+    background-color: #ffffff; /* Green background for button */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-text {
+    position: absolute; /* Position the text absolutely */
+    bottom: 20px; /* Distance from the bottom */
+    left: 30%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    color: #fff; /* Text color */
+    font-size: 50px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow for readability */
+    
+}
+

@@ -1,0 +1,66 @@
+body {
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .carousel slide {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a bottom shadow */
+
+
+  }
+
+  .carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 1s ease-in-out; /* Smooth transition for carousel items */
+  }
+
+  .carousel-item {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for slide and opacity */
+  }
+  
+  .carousel-text {
+    flex: 1;
+    padding: 50px;
+    margin-left: 90px;
+  }
+  
+  .carousel-text h2 {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+
+  }
+  
+  .carousel-text p {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    
+  }
+  
+  .carousel-image {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .carousel-image img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #336aea00;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  

@@ -1,0 +1,110 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.featured-products {
+    padding: 2px 0;
+    background-color: #f9f9f9;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #070707;
+}
+
+.featured-products2 h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #050505;
+}
+
+.featured-products3 h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #000000;
+}
+
+.featured-products4 h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #000000;
+}
+
+.product-grid {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap if they overflow */
+    justify-content: space-between; /* Distribute space between items */
+    gap: 20px; /* Add space between items */
+    margin: 0 10px; /* Reduce margin on the left and right sides */
+}
+
+.product-card {
+    flex: 1 1 calc(25% - 20px); /* Each product card takes 25% of the width minus the gap */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0; /* Remove additional margins */
+    background-color: #fff; /* Background color for product card */
+    border: 1px solid #e0e0e0; /* Border for product cards */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slightly scale up the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to give a lifting effect */
+}
+
+.product-card:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.product-card:hover {
+    border: 1px solid #000000; /* Change border color on hover */
+}
+
+
+.product-card img {
+    width: 100%; /* Ensure images take the full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space under images */
+}
+
+.product-info {
+    padding: 15px; /* Padding around text */
+    text-align: center; /* Center align text */
+}
+
+.product-info h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-info p {
+    font-size: 1em;
+    color: #666;
+}
+
+.product-info .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #0076df;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.product-info .btn:hover {
+    background-color: #0076df;
+}
